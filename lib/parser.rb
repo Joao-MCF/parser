@@ -11,7 +11,7 @@ module Parser
   def self.parse logfile
     log = File.new logfile
     reset_status
-    while line == log.gets
+    while line = log.gets
       process_line line
     end
 

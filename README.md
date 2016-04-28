@@ -1,29 +1,39 @@
-<<<<<<< HEAD
 # Parser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/parser`. To experiment with that code, run `bin/console` for an interactive prompt.
+<a href="https://codeclimate.com/github/marclerodrigues/parser"><img src="https://codeclimate.com/github/marclerodrigues/parser/badges/gpa.svg" /></a>
 
-TODO: Delete this and the text above, and describe your gem
+Quake 3 log parse proposed by Code Miner 42 as aa test for admission.
+
+## Proposed Solution
+
+Create a Parse module to parse the log file using Rules that can be found at modules/rules as Regular Expressions, using these Rules and the classes Game, Player and Kill the parser is able to solve the problem proposed, fulfilling all the requirements requested.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+In order to use this gem you need to build and install.
+To build do:
+```
+$ gem build parser.gemspec
 
-```ruby
-gem 'parser'
 ```
 
-And then execute:
+To install do:
+```
+$ gem install parser-0.1.0.gem
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install parser
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'parse' #Require the gem
+
+Parser.set_game #Sets the initial conditions to the game
+Parset.parse "{PATH_TO_FILE_LOG}" #Parses the log file
+game = Parser.games.sample #Takes a random game from file
+puts game.hash #Shows the game stats as a hash
+
+```
 
 ## Development
 
@@ -38,7 +48,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-=======
-# parser
-Quake 3 Parser
->>>>>>> 6dcf6641563f328c8015c233609c602e1713ba62

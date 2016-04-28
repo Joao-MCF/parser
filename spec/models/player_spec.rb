@@ -4,8 +4,7 @@ describe Player do
   before :all do
     @player = Player.new
   end
-
-  it 'is a instance of Player' do
+  it 'is a instace of Player' do
     expect(@player).to be_instance_of Player
   end
 
@@ -23,7 +22,7 @@ describe Player do
       @player.deaths += 1
       expect(@player.deaths).to eq(1)
     end
-    it 'add kills' do
+    it 'add kill' do
       @player.kills += 1
       expect(@player.kills).to eq(1)
     end

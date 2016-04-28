@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Parser
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/parser`. To experiment with that code, run `bin/console` for an interactive prompt.
@@ -37,3 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+=======
+# parser
+Quake 3 Parser
+>>>>>>> 6dcf6641563f328c8015c233609c602e1713ba62

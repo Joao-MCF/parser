@@ -2,6 +2,15 @@ require "parser/version"
 require "modules/rules"
 require "models/game"
 
+=begin
+  PARSER MODULE:
+  Responsable for parsing the log file and doing all the logic behind the parse.
+
+  Created by: Marcle Rodrigues
+  Created at: April 28,2016
+
+=end
+
 module Parser
   def self.set_game
     @games = []
@@ -45,7 +54,8 @@ module Parser
       parse_kill_line line
     end
   end
-
+  #Parse a new kill line, by spliting at the last colon.
+  #The using the Rule for split kill regex to separates the kill data.
   def self.parse_kill_line line
     kill_line = line.split(':').last
     kill_data = kill_line.split(Rules.kill_split)

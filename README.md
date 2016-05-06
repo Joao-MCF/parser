@@ -2,7 +2,7 @@
 
 <a href="https://codeclimate.com/github/marclerodrigues/parser"><img src="https://codeclimate.com/github/marclerodrigues/parser/badges/gpa.svg" /></a>
 
-Quake 3 log parse proposed by Code Miner 42 as a test for admission.
+Quake 3 log parse proposed by Code Miner 42 as a test.
 
 ## Proposed Solution
 
@@ -40,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/parser/fork )
+1. Fork it ( https://github.com/marclerodrigues/parser/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
